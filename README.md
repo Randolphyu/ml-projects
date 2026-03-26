@@ -1,4 +1,4 @@
-# ml-projects
+# ML-projects
 
 A collection of end-to-end machine learning projects organised by business problem.  
 Each subdirectory is a self-contained project with its own README, notebooks, and dependencies.
@@ -39,8 +39,3 @@ ml-projects/
 ```
 
 ---
-
-## Roadmap
-
-- [ ] `etl-projects/` — data pipeline projects (Airflow, dbt, BigQuery)
-- [ ] `llm-projects/` — LLM applications and RAG pipelines
