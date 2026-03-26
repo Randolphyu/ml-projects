@@ -165,14 +165,6 @@ cfg = Config(
 ```
 
 ---
-
-## Tech stack
-
-Python · pandas · scikit-learn · XGBoost · SHAP · PyALE · Boruta  
-Folium · H3 · Plotly · Google BigQuery · NOAA API · Census Geocoder API
-
----
-
 ## Team
 
 Yu-Huan Yu · I-Ming Huang · Yi-Hsien Lou  
