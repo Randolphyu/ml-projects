@@ -21,7 +21,7 @@ XGBoost was selected for its superior recall (50.7%) — correctly flagging half
 
 **`time_block` is the single strongest predictor** (SHAP mean |impact| +2.42), followed by grid-level crime history (`grid_max` +1.39, `grid_std` +0.71, `hist_mean` +0.56). Risk spikes sharply after 3 PM and peaks between 6 PM and midnight.
 
-![SHAP Mean Absolute Impact — XGB](docs/images/shap_summary_bar.png)
+<img src="docs/images/shap_summary_bar.png" width="600" alt="SHAP Mean Absolute Impact — XGB">
 
 **Grid Stats dominate across all three models.** Temporal features rank second. ACS demographics and COVID data add marginal but statistically confirmed signal (all 20 top features confirmed by Boruta).
 
@@ -33,7 +33,7 @@ XGBoost was selected for its superior recall (50.7%) — correctly flagging half
 
 **Individual predictions are fully explainable.** The waterfall below shows a high-risk prediction (probability 0.979): `grid_mean` (+1.44), `hist_mean` (+0.80), and `grid_std` (+0.69) push the score up from a near-zero baseline — the model is not a black box.
 
-![SHAP Waterfall — High-Risk Prediction (p=0.979)](docs/images/shap_waterfall_example.png)
+<img src="docs/images/shap_waterfall_example.png" width="600" alt="SHAP Waterfall — High-Risk Prediction (p=0.979)">
 
 ---
 
@@ -138,7 +138,7 @@ Boruta is run in analysis mode (`use_boruta_for_training = False`) to validate f
 
 The beeswarm below shows how each feature value (red = high, blue = low) maps to its SHAP impact — high `time_block` values push predictions strongly negative (low risk, early morning), while high `grid_mean` consistently drives risk up.
 
-![SHAP Beeswarm — XGB](docs/images/shap_beeswarm.png)
+<img src="docs/images/shap_beeswarm.png" width="600" alt="SHAP Beeswarm — XGB">
 
 **Why TimeSeriesCV instead of k-fold?**  
 Crime is time-dependent. Random k-fold leaks future information into training folds. `TimeSeriesSplit` with 5 splits preserves temporal ordering and gives realistic held-out estimates.
@@ -165,12 +165,6 @@ cfg = Config(
 ```
 
 ---
-<<<<<<< HEAD
-## Team
-
-Yu-Huan Yu · I-Ming Huang · Yi-Hsien Lou  
-DSCI 558 Final Project — University of Southern California
-=======
 
 ## Tech stack
 
@@ -178,4 +172,3 @@ Python · pandas · scikit-learn · XGBoost · SHAP · PyALE · Boruta
 Folium · H3 · Plotly · Google BigQuery · NOAA API · Census Geocoder API
 
 ---
->>>>>>> 8152125 (update image)
