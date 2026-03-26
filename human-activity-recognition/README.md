@@ -126,8 +126,3 @@ Top 3 features selected by between-class variance (proxy for discriminative powe
 Python · pandas · numpy · scikit-learn · scipy · matplotlib
 
 ---
-
-## Context
-
-DSCI 552 Homework 3 & 4 — University of Southern California  
-Merged into a single project for portfolio presentation.

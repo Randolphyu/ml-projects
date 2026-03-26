@@ -165,7 +165,17 @@ cfg = Config(
 ```
 
 ---
+<<<<<<< HEAD
 ## Team
 
 Yu-Huan Yu · I-Ming Huang · Yi-Hsien Lou  
 DSCI 558 Final Project — University of Southern California
+=======
+
+## Tech stack
+
+Python · pandas · scikit-learn · XGBoost · SHAP · PyALE · Boruta  
+Folium · H3 · Plotly · Google BigQuery · NOAA API · Census Geocoder API
+
+---
+>>>>>>> 8152125 (update image)
